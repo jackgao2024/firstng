@@ -1,0 +1,32 @@
+nav {
+  min-height: 100px;
+  background-color: #87d0d8;
+  // .profileImage {
+  //   // width: 50px;
+  //   // border-radius: 10px;
+  // }
+  .status {
+    width: 17px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .online {
+    background-color: green;
+  }
+  .offline {
+    background-color: grey;
+  }
+}
+.banner {
+  background-image: url(../assets/banner1.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.routerContainer {
+  min-height: 500px;
+}
+footer {
+  background-color: rosybrown;
+  height: 200px;
+}

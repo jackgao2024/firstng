@@ -1,0 +1,25 @@
+<div class="productContainer">
+  <h1>The Cakery Products</h1>
+  <div class="containerItems">
+    <thead>
+      <tr>
+        <th>productID</th>
+        <th>productName</th>
+        <th>productImage</th>
+        <th>productDescription</th>
+        <th>productReview</th>
+      </tr>
+    </thead>
+
+    @for(productRow of products; track productRow.id){
+    <tr>
+      <td>{{ productRow.productID }}</td>
+      <td>{{ productRow.productName }}</td>
+      <td><img [src]="productRow.image" alt="" /></td>
+      <td>{{ productRow.productDescription }}</td>
+      <td>{{ productRow.productReview }}</td>
+    </tr>
+
+    }
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Tweets</h1>
+
+  <button
+    class="btn btn-primary"
+    (dblclick)="display()"
+    (click)="addNewTweet()"
+    (mouseover)="mouseover()"
+  >
+    Add New Tweet
+  </button>
+  <div class="tweetsContainer">
+    <!-- <div class="tweet">
+      <p>Example Id 1</p>
+      <p>Example Content 1</p>
+      <p>Example user Jack</p>
+    </div>
+    <div class="tweet">
+      <p>Example Id 1</p>
+      <p>Example Content 1</p>
+      <p>Example user Jack</p>
+    </div> -->
+    @for(tweetRow of tweets; track tweetRow.tweetID){
+    <div class="tweet">
+      <p>{{ tweetRow.tweetID }}</p>
+
+      <p>{{ tweetRow.tweet }}</p>
+      <p class="tweetUser">
+        <img
+          [src]="tweetRow.profileImage"
+          alt=""
+          class="tweetProfileImage"
+        />&#64;{{ tweetRow.user }}
+      </p>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<p>uxdesign works!</p>
+<div class="container">
+  <div class="routerContainer">
+    @for(projectsRow of projects; track projectsRow.projectID){
+    <div class="project">
+      <p class="projectID">{{ projectsRow.projectID }}</p>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <p class="projectName">{{ projectsRow.projectName }}</p>
+      <p class="projectImage">
+        <img [src]="projectsRow.projectImage" alt="" class="projectIMG" />
+      </p>
+      <!-- <button><a href=""></a>Go To the Page</button> -->
+
+      <a [attr.href]="projectsRow.projectURLContent" class="projectURL"
+        >Go to the Page</a
+      >
+      <!-- 
+        <a href=""><p class="projectURL">{{ projectsRow.projectURLContent }}</p></a> -->
+      <p class="projectCourseName">
+        Course Name: &nbsp; {{ projectsRow.projectCourseName }}
+      </p>
+    </div>
+    }
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+</div>
