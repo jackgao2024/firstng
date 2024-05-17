@@ -1,0 +1,48 @@
+.projectName {
+  display: inline-block;
+  font-size: 40px;
+  font-family: fantasy;
+}
+.projectCourseName {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(rgb(239, 251, 152), rgb(149, 207, 210));
+}
+.projectID {
+  font-size: 40px;
+  font-family: ok;
+  display: inline-block;
+  padding-top: 30px;
+}
+@font-face {
+  font-family: ok;
+  src: url(../../assets/fonts/FugazOne-Regular.ttf);
+}
+.projectIMG {
+  width: 1000px;
+  height: 500px;
+}
+.projectURL {
+  text-decoration: none;
+  color: black;
+  // justify-self: center;
+
+  background-color: rgb(190, 234, 230);
+  border-radius: 20px;
+  font-size: 25px;
+  margin-bottom: 40px;
+  border: 2px solid black;
+  color: black;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
